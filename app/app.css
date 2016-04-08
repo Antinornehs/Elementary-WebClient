@@ -7,6 +7,21 @@
   padding: 0 0 0.5em;
 }
 
+/*svg {
+display: flex;
+  /*display:inline-block;*/
+/*}*/
+  /*display: block;*/
+  /*font-size:0;*/
+  /*margin-bottom:0px;*/
+  /*margin-right:-150px;*/
+  /*margin-left:0px;background-color:yellow;}*/
+/*}*/
+/*SVG {*/
+  /*display:block;*/
+  /*max-height: 100%;*/
+/*}*/
+
 .menu:before {
   content: "[";
 }

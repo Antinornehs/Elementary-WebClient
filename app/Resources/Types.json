@@ -1,0 +1,44 @@
+{
+  "Types": [
+    {
+      "id": 0,
+      "name": "Fire",
+      "weaknesses": [1,2,3]
+    },
+    {
+      "id": 1,
+      "name": "Water",
+      "weaknesses": [2,5,7]
+    },
+    {
+      "id": 2,
+      "name": "Ice",
+      "weaknesses": [0,6]
+    },
+    {
+      "id": 3,
+      "name": "Ground",
+      "weaknesses": [1,4,7]
+    },
+    {
+      "id": 4,
+      "name": "Wind",
+      "weaknesses": [0,6,7]
+    },
+    {
+      "id": 5,
+      "name": "Electric",
+      "weaknesses": [3,4]
+    },
+    {
+      "id": 6,
+      "name": "Metal",
+      "weaknesses": [0,1,5]
+    },
+    {
+      "id": 7,
+      "name": "Plant",
+      "weaknesses": [0,2,6]
+    }
+  ]
+}

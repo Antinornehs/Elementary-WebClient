@@ -1,0 +1,61 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Rest Client</title>
+    <meta name="description" content="List of Types with Twitter Bootstrap.">
+    <link rel="stylesheet" href="app.css">
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--<link rel="stylesheet" type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.0/css/jquery.dataTables.css">-->
+    <!--<link rel="stylesheet" type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.0/css/jquery.dataTables_themeroller.css">-->
+    <!--<script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.min.js"></script>-->
+    <!--<script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.0/jquery.dataTables.min.js"></script>-->
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+
+        <div class = "navbar-header">
+            <a class = "navbar-brand" href = "#">Elementary</a>
+        </div>
+
+        <div>
+            <ul class = "nav navbar-nav">
+                <li class="active"><a href = "#">List of types</a></li>
+            </ul>
+        </div>
+    </nav>
+</head>
+
+<!--/*<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"/>*/-->
+<!--/*<link rel="stylesheet"         href="http://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css"/>*/-->
+<!--/*<script type="text/javascript" src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>*/-->
+<!--/*<script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>*/-->
+<!--/*<script>*/-->
+
+<body>
+
+<div class="container">
+
+    <div class="row header" style="text-align:center;color:black">
+        <h3>List of Types.</h3>
+    </div>
+
+    <table class="table table-striped">
+            <tr>
+                <td><b>Id</b></td>
+                <td><b>Type</b></td>
+                <td><b>Weaknesses</b></td>
+            </tr>
+
+            <tr ng-repeat="type in types">
+            <td >{{type.id}}</td>
+            <td><svg title="{{type.name}}" ng-include="getLogos(type.id)"></svg></td>
+            <td><svg ng-repeat="weakness in type.weaknesses"
+                      title="{{types[weakness].name}}"
+                      ng-include="getLogos(weakness)"></svg></td>
+            </tr>
+
+    </table>
+</div>
+</body>
+
+</html>
